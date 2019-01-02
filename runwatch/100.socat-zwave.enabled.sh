@@ -11,7 +11,7 @@ if [[ -z "${SOCAT_ZWAVE_LINK}" ]]; then
 fi
 
 BINARY="socat"
-PARAMS="$INT_SOCAT_LOG-d -d -d pty,link=$SOCAT_ZWAVE_LINK,raw,user=root,mode=777 $SOCAT_ZWAVE_TYPE:$SOCAT_ZWAVE_HOST:$SOCAT_ZWAVE_PORT"
+PARAMS="$INT_SOCAT_LOG-d -d pty,link=$SOCAT_ZWAVE_LINK,raw,user=root,mode=777 $SOCAT_ZWAVE_TYPE:$SOCAT_ZWAVE_HOST:$SOCAT_ZWAVE_PORT"
 
 ######################################################
 
