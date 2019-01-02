@@ -9,7 +9,8 @@ COPY runwatch/200.home-assistant.enabled.sh /runwatch/200.home-assistant.enabled
 
 # Install socat
 RUN apt update
-RUN apt install -y --no-install-recommends apt-utils socat
+RUN apt install -y --no-install-recommends apt-utils 
+RUN apt install -y --no-install-recommends socat
 
 # Monitor socat
 COPY runwatch/100.socat-zwave.enabled.sh /runwatch/100.socat-zwave.enabled.sh
